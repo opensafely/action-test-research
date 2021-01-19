@@ -1,5 +1,7 @@
 name: Test that the project is runnable with new action
 
+on: [push]
+
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
