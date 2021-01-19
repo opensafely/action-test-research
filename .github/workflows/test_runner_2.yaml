@@ -9,7 +9,7 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: opensafely/research-action@c69d21d09bd92ea4555a387d42b5fccfa5a1dd1c
+      uses: opensafely/research-action
       with:
         who-to-greet: 'Mona the Octocat'
     # Use the output from the `hello` step
