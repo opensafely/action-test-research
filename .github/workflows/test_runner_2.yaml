@@ -1,11 +1,16 @@
-name: Test that the project is runnable with new action
+name: Test that the project is runnable
 
 on: [push]
 
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  DOCKER_RO_TOKEN: ${{ secrets.DOCKER_RO_TOKEN }}
+  STATA_LICENSE: ${{ secrets.STATA_LICENSE }}
+
 jobs:
-  hello_world_job:
+  test:
     runs-on: ubuntu-latest
-    name: Job
+    name: Test that the project is runnable
     steps:
-    - name: Step
+    - name: Test that the project is runnable
       uses: opensafely/research-action@main
